@@ -50,7 +50,7 @@ const Select = () => {
       <input
         ref={inputRef}
         type="text"
-        placeholder={tempval ? tempval : "--Select--option"}
+        placeholder={tempval ? tempval : "-Select Option"}
         onChange={(e) => setSearchQuery(e.target.value)}
         value={open ? displayValue() : tempval}
         className={isFocus ? "input isFocus" : "input"}
@@ -72,7 +72,7 @@ const Select = () => {
             <FiChevronUp size={14} />
           )
         ) : (
-          <FiChevronDown size={14} />
+          <FiChevronDown onClick={handleChange} size={14} />
         )}
       </span>
       <ul className={open ? "select-options show" : "select-options"}>

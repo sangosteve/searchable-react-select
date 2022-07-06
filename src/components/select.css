@@ -13,6 +13,7 @@
 .select-control input {
   width: 100%;
   padding: 5px;
+  position: relative;
 }
 
 .select-control span.select-icon {
@@ -20,6 +21,7 @@
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 1000;
 }
 
 ul.select-options {
