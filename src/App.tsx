@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 // import Select from "./components/Select";
-import Dropdown from "./components/DropDown";
+import Select from "./components/Select";
 
 function App() {
   const options = [
@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       {/* <Select /> */}
       <br style={{ border: "1px solid grey" }} />
-      <Dropdown
+      <Select
         name="countries"
         label="name"
         id="code"
