@@ -4,11 +4,11 @@ import "./select.css";
 const Select = () => {
   const inputRef = useRef();
   const [val, setVal] = useState("");
-  const [tempval, setTempVal] = useState("");
+  /**/ const [tempval, setTempVal] = useState("");
   const [isFocus, setIsFocus] = useState(false);
-  const [open, setOpen] = useState(false);
+  /**/ const [open, setOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [hovered, setHovered] = useState(false);
+  /**/ const [hovered, setHovered] = useState(false);
 
   const handleChange = (e) => {
     e.preventDefault();
